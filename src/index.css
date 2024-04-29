@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
+
+    --card: 350 100% 85%; 
+    --card-foreground: 224 71.4% 4.1%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+
+    --primary: 220.9 39.3% 11%;
+    --primary-foreground: 210 20% 98%;
+
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 224 71.4% 4.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 210 20% 98%;
+    --primary-foreground: 220.9 39.3% 11%;
+
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 216 12.2% 83.9%;
+  }
+  .window-button 
+  {
+    @apply  bg-rose-200  rounded-t-xl m-1 w-1/6 h-7 relative bottom-12 relative right-4 max-w-24 min-w-14 mb-1 ml-0 -mr-1;
+    
+  }
+    
+  .add-window-button 
+  {
+    @apply  bg-fuchsia-300 rounded-t-xl m-1 w-1/12 h-7 relative bottom-12 relative right-5 max-w-8 min-w-7;
+  }
+  .delete-window-button 
+  {
+    @apply text-2xl text-pink-500 font-extrabold absolute top-4 right-6;
+  }
+  .bigcard{
+    @apply bg-card rounded-b-lg rounded-tr-lg border-border p-4 w-1/2 m-3 relative top-16 h-screen max-w-5xl; 
+  }
+  .bigcard2{
+    @apply bg-card rounded-lg  border-border p-4 w-1/2 m-3 relative top-16 h-screen max-w-5xl ; 
+  }
+  
+  
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+     
+        input[type="range"]::-webkit-slider-thumb {
+            width: 15px;
+            -webkit-appearance: none;
+  			appearance: none;
+            height: 15px;
+            cursor: pointer;
+            background: #9d22a1;
+            
+            border-radius: 50%;
+            
+        }
+    }
+  .numbut{
+    @apply  bg-fuchsia-300 text-primary-foreground rounded-lg p-4 m-6   ;
+  }
+  .date_pick{
+    @apply   text-primary-foreground text-xl  ml-4    ;
+  }
+
+  
+  
+  
+  
+  
+}
+
